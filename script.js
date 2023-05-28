@@ -1,8 +1,6 @@
 //your JS code here. If required.
-function showWindowSize(){
-	let width = document.getElementById("width");
-	let height = document.getElementById("height");
-	width.innerText = window.innerWidth;
-	height.innerText = window.innerHeight;
+const size = document.getElementById("windowSize");
+function showWindowSize(event){
+	size.innerText = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`
 }
 window.onresize = showWindowSize;
