@@ -1,8 +1,10 @@
 //your JS code here. If required.
-const h1 = document.getElementById("sizeInfo");
-document.body.append(h1);
-//div.append(size);
-function showWindowSize(){
-	h1.innerText = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`
-}
-window.onresize = showWindowSize;
+const screenSize = document.getElementById("sizeInfo")
+screenSize.innerText = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`;
+
+document.body.append(screenSize);
+
+// onresize is a property that takes a function value. which is why
+
+window.onresize = function(){
+    screenSize.innerText = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`;
