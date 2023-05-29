@@ -2,7 +2,7 @@
 const div = document.getElementById("sizeInfo");
 document.body.append(div);
 //div.append(size);
-function showWindowSize(event){
+function showWindowSize(){
 	div.innerText = `Width: ${window.innerWidth} and Height: ${window.innerHeight}`
 }
 window.onresize = showWindowSize;
